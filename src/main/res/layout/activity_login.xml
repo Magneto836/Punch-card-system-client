@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.LoginActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="280dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_str"
+            android:imeOptions="actionNext" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/tl_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/tl_password"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_hint_str"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="144dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorLoginButton"
+        android:onClick="handleLoginBtn"
+        android:text="@string/login_str"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textSize="16sp"
+        android:theme="@style/AppTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tl_password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="144dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorLoginButton"
+        android:onClick="handleRegistBtn"
+        android:text="@string/regist_str"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textSize="16sp"
+        android:theme="@style/AppTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tl_password" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

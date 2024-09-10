@@ -1,0 +1,54 @@
+
+
+
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.myapplication1'
+    compileSdk 34
+    viewBinding {
+        enabled = true
+    }
+    defaultConfig {
+        applicationId "com.example.myapplication1"
+        minSdk 33
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat.v161
+    implementation libs.material.v180
+    implementation libs.activity.v170
+    implementation libs.constraintlayout
+    implementation libs.play.services.location
+    implementation libs.circleimageview
+
+    implementation libs.retrofit
+    implementation libs.converter.gson
+
+    implementation'com.amap.api:location:latest.integration'
+    testImplementation libs.junit
+    androidTestImplementation libs.junit.v115
+    androidTestImplementation libs.espresso.core.v351
+
+
+}

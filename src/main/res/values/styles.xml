@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary" type="color">@color/colorPrimary</item>
+        <item name="colorPrimaryDark" type="color">@color/colorPrimaryDark</item>
+        <item name="colorAccent" type = "color">@color/colorLoginButton</item>
+        <item name="android:windowLightStatusBar" type="boolean">true</item>
+    </style>
+    <style name="CommonTextViewStyle">
+        <item name="android:textSize">18sp</item> <!-- 设置全局字体大小 -->
+    </style>
+</resources>

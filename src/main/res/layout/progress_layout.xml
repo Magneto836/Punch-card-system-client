@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- 显示进度的文本 -->
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在处理……"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"/>
+
+    <!-- 关闭对话框的按钮 -->
+    <Button
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭"
+        android:layout_gravity="center"
+        android:visibility="gone"/>  <!-- 初始时按钮不可见 -->
+</LinearLayout>
